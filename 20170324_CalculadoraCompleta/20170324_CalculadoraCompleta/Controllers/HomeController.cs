@@ -49,7 +49,7 @@ namespace _20170324_CalculadoraCompleta.Controllers
                     visor = "0";
                     break;
                 //*******************************************************************
-                case "":
+                //case "":
             }
 
 
