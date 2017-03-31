@@ -49,7 +49,25 @@ namespace _20170324_CalculadoraCompleta.Controllers
                     visor = "0";
                     break;
                 //*******************************************************************
-                //case "":
+                case "+":
+                case "-":
+                case "x":
+                case ":":
+                    if ((string) Session["operador"]== ""){
+                        //guardar o valor do OPERANDO
+                        Session["operando"] = visor;
+                        //guardar o valor do OPERADOR 
+                        Session["operador"] = bt;
+                        //limpa o visor
+                        visor = "0";
+                    }
+                    else{
+                        //fazer a conta
+
+                    }
+                    break;
+
+                    //o que fazer com o botão '='?
             }
 
 
